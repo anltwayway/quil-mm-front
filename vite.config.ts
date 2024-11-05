@@ -27,7 +27,8 @@ export default ({command, mode}: ConfigEnv): UserConfig => {
         server: {
             port: env.VITE_PORT, // 端口号
             host: "0.0.0.0",
-            open: env.VITE_OPEN === 'true',
+            open: false, 
+            // env.VITE_OPEN === 'true',
             // 本地跨域代理. 目前注释的原因：暂时没有用途，server 端已经支持跨域
             // proxy: {
             //   ['/admin-api']: {
