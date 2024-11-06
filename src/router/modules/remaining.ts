@@ -104,6 +104,7 @@ const remainingRouter: AppRouteRecordRaw[] = [
       }
     ]
   },
+
   {
     path: '/dict',
     component: Layout,
@@ -127,7 +128,12 @@ const remainingRouter: AppRouteRecordRaw[] = [
       }
     ]
   },
-
+  {
+    path: '/remote-server-manager',
+    name: 'RemoteServerManager',
+    component: () => import('@/views/RemoteServerManager/Index.vue'),
+    meta: { title: '远程服务器管理', icon: 'server' }
+  },
   {
     path: '/codegen',
     component: Layout,
